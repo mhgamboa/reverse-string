@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(168, 168, 168);
+  justify-content: center;
+}
+
+h1 {
+  align-self: center;
+  margin-bottom: 10vh;
+  font-weight: bold;
+}
+
+input,
+button {
+  width: 60vw;
+  align-self: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding-left: 10px;
+  margin-bottom: 10vh;
+  font-size: 2.5em;
+}

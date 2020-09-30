@@ -2,11 +2,8 @@
 
 My first attempt to create something from scratch though VS Code and Git. Wish me luck.
 
-#Start Date
+## Progress
 
-9/11/2020
+9/11/2020 - Files created. Project officially started
 
-#Progress
-
-9/30/2020
-Program is now functional
+9/30/2020 - Now finished (?) Program is now functional. Basic styling added. Added another eventListener for the enter button.
