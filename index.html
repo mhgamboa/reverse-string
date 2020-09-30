@@ -6,16 +6,27 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" name="word" id="userInput" placeholder="abcd" />
-    <h1 id="output"></h1>
-    <button>Press Me</button>
+    <h1>Type anything and the reversed words will appear here!</h1>
+    <input
+      type="text"
+      name="word"
+      id="userInput"
+      placeholder="Type Word Here"
+    />
+    <button>Reverse Me!</button>
 
     <script>
-      monitorEvents(document);
-      let input = document.getElementById("userInput").value;
-      console.log(input);
-      console.log(window);
-      document.getElementById("output").innerText = "word";
+      let h1 = document.querySelector("h1");
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", function () {
+        let formInput = document.querySelector("input").value;
+        if (!formInput) {
+          alert("You need to actually type something!");
+        } else {
+          h1.textContent = formInput.split("").reverse().join("");
+        }
+      });
     </script>
   </body>
 </html>
